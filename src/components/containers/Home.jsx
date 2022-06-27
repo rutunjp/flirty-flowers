@@ -38,10 +38,7 @@ const Home = () => {
           <h2>Rio de Janeiro</h2>
         </div>
       ) : (
-        <div
-          className="main-container"
-          id="main-container" 
-        >
+        <div className="main-container" id="main-container" data-scroll-section>
           <Navbar />
           <Header />
           <Featured />

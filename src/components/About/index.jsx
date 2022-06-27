@@ -3,7 +3,7 @@ import "./style.scss";
 import SectionHeader from "../SectionHeader/index";
 const About = () => {
   return (
-    <section className={"about-section"}>
+    <section className={"about-section"} data-scroll-section>
       <SectionHeader title="about"></SectionHeader>
       <p id="headline">
         Flirty Flowers is a blog about flowers and the floral designers who make
