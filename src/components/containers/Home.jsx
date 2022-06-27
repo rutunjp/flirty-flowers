@@ -9,9 +9,13 @@ import Footer from "../Footer";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import useLocoScroll from "../../hooks/useLocoScroll";
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
+  useLocoScroll(!preloader);
+
   const [timer, setTimer] = useState(3);
+
   const id = useRef(null);
 
   const clear = () => {
