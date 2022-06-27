@@ -4,10 +4,11 @@
 
   align-items: center;
   img {
-    clip-path: inset(100%, 0%, 0%, 0%);
-    transition: clip-path is cubic-bezier(0.77, 0, 0.175, 1);
+    clip-path: inset(100% 0% 0% 0%);
+    transition: clip-path 1s cubic-bezier(0.77, 0.2, 0.175, 1);
+
     &.is-reveal {
-      clip-path: inset(0%, 0%, 0%, 0%);
+      clip-path: inset(0% 0% 0% 0%);
     }
   }
   h6 {
@@ -24,8 +25,10 @@
 
   .featured-row-layout {
     grid-template-rows: repeat(2, auto);
+
     img {
       width: 100%;
+      // height: 100%;
       object-fit: cover;
     }
   }
